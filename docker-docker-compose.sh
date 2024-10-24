@@ -46,12 +46,12 @@ add_docker_repo() {
 }
 
 # Function to install Docker
-#install_docker() {
- # echo "Installing Docker..."
- # apt update
- # apt install docker-ce docker-ce-cli containerd.io -y
- # echo "Docker installed successfully!"
-#}
+install_docker() {
+  echo "Installing Docker..."
+  apt update
+  apt install docker-ce docker-ce-cli containerd.io -y
+  echo "Docker installed successfully!"
+}
 
 # Function to verify Docker installation
 verify_docker() {
