@@ -27,10 +27,10 @@ check_root() {
 }
 
 # Function to update the system packages
-update_system() {
-  echo "Updating the system packages..."
-  apt update && apt upgrade -y
-}
+#update_system() {
+ # echo "Updating the system packages..."
+ # apt update && apt upgrade -y
+#}
 
 # Function to install required dependencies for Docker installation
 install_dependencies() {
@@ -46,12 +46,12 @@ add_docker_repo() {
 }
 
 # Function to install Docker
-install_docker() {
-  echo "Installing Docker..."
-  apt update
-  apt install docker-ce docker-ce-cli containerd.io -y
-  echo "Docker installed successfully!"
-}
+#install_docker() {
+ # echo "Installing Docker..."
+ # apt update
+ # apt install docker-ce docker-ce-cli containerd.io -y
+ # echo "Docker installed successfully!"
+#}
 
 # Function to verify Docker installation
 verify_docker() {
