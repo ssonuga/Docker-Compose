@@ -89,11 +89,11 @@ enable_docker_on_boot() {
 }
 
 # Function to test Docker and Docker Compose installation with a sample container
-test_docker_setup() {
-  echo "Running a test to check Docker and Docker Compose setup..."
-  mkdir -p ~/docker_test && cd ~/docker_test
-  cat > docker-compose.yml << EOF
-version: '3.8'
+# test_docker_setup() {
+ # echo "Running a test to check Docker and Docker Compose setup..."
+ # mkdir -p ~/docker_test && cd ~/docker_test
+ # cat > docker-compose.yml << EOF
+# version: '3.8'
 
 services:
   web:
@@ -107,13 +107,13 @@ EOF
 }
 
 # Function to clean up the test container
-cleanup_test() {
-  echo "Cleaning up the test container..."
-  cd ~/docker_test
-  docker-compose down
-  rm -rf ~/docker_test
-  echo "Test environment cleaned up."
-}
+#cleanup_test() {
+ # echo "Cleaning up the test container..."
+ # cd ~/docker_test
+ # docker-compose down
+ # rm -rf ~/docker_test
+ # echo "Test environment cleaned up."
+#}
 
 # Function to interactively confirm the installation steps
 confirm_continue() {
