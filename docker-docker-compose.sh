@@ -95,16 +95,16 @@ enable_docker_on_boot() {
  # cat > docker-compose.yml << EOF
 # version: '3.8'
 
-services:
-  web:
-    image: nginx
-    ports:
-      - "8080:80"
-EOF
-  docker-compose up -d
-  sleep 5 # Give it a few seconds to start
-  echo "Test complete. You can visit http://<server-ip>:8080 in your browser."
-}
+#services:
+ # web:
+  #  image: nginx
+   # ports:
+    #  - "8080:80"
+# EOF
+ # docker-compose up -d
+ # sleep 5 # Give it a few seconds to start
+ # echo "Test complete. You can visit http://<server-ip>:8080 in your browser."
+#}
 
 # Function to clean up the test container
 #cleanup_test() {
